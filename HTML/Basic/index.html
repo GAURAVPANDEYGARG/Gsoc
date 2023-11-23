@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarivate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        nav{
+            background-color:rgb(69,75,75);
+            height:75px;
+            display: flex;
+        }
+        .logo-block{
+            height: 75px;
+            width: 20%;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-around;
+        }
+        .anchor{
+            height: 75px;
+            border: 2px solid blue;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .anchor a{
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .anchor a:hover{
+            color: blue;
+            text-decoration: overline;
+
+        }
+
+        .login{
+            height: 75px;
+            border: 2px solid blue;
+            width: 20%;
+
+        }
+        .login .profile-icon{
+            height: 50px;
+            width: 50px;
+            border: 2px solid white;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: x-large;
+        }
+        #card-mainblock{
+            height: 80vh;
+            background-color: rgb(179, 130, 130);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        #card-mainblock .empcard{
+            height: 600px;
+            border:  2px solid red;
+            width: 500px;
+            box-shadow: 5px ,3px, 4px , grey;
+
+        }
+
+        #card-mainblock .empcard img{
+            border-radius: 15px;
+            font-size: xx-large;
+            text-align: center;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        #card-mainblock .empcard h1,h2{
+            background-color: aqua;
+            font-size: xx-large;
+            text-align: center;
+        }
+        #card-mainblock .empcard p{
+            background-color: rgb(95, 25, 148);
+            font-size: x-large;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .about-us{
+            height: 80vh;
+            width: 1600px;
+            background-color: beige;
+            border: 2px solid black;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+
+        }
+        .about-us .content{
+            height:  80vh;
+            width: 40%;
+           
+
+           /* border: 2px solid black;*/
+        }
+        .about-us .content h1{
+            font-weight: 400px;
+            font-size: 36px;
+            padding-left: 10px;
+            font-family: 'Times New Roman', Times, serif;
+
+
+
+        }
+
+        .about-us .content p{
+            height: 150px;
+           /* border: 2px solid black;*/
+            padding-top: 25px;
+            padding-left: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: 300px;
+        }
+
+        .about-us .content ul{
+            height: 500px;
+           /* border: 2px solid green;*/
+
+
+        }
+
+        .about-us .content ul li{
+            font-size: 30px;
+            padding-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300px;
+            color: grey;
+
+
+        }
+
+        .about-us .content ul li::marker{
+            color: blueviolet;
+        }
+
+        .sbn{
+            background-color: rgba(62, 7, 114, 0.867);
+            color: white;
+            font-size: 15px;
+            width: 200px;
+            height: 45px;
+            border: none;
+            font-weight: 200px;
+            
+
+        }
+
+        .sbn:hover{
+            background-color: rgb(52, 21, 177);
+            color:white;
+        }
+
+        .about-us media{
+            height: 80vh;
+            width: 48%;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <header style="background-color: black;color: blue;height: 15px; text-align: end;">
+        <mark style="background-color: rgb(135,197,197);">Clarivate </mark> 
+    </header>
+    <!-- semantic tag-->
+    <nav>
+
+        <div class="logo-block">
+            <img src="./assetes/Clarivate_Logo.jpg" alt="" height="72px" width="200px">
+
+        </div>
+
+        <div class="anchor">
+            <a href=""> Projects</a>
+
+            <a href=""> Team View</a>
+            <a href="">Gallary</a>
+            <a href="">Apporach</a>
+            
+        </div>
+
+        <div class="login">
+            <div class="profile-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+
+            
+        </div>
+
+    </nav>
+
+    <section id="card-mainblock">
+        <div class="empcard">
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/19/01/user-154199_640.png" alt="" height="450px" width="450px">
+            <h1>Manisha</h1>
+            <h2>SDE 1</h2>
+            <p>Java expert,with hibernate as framework</p>
+        </div>
+        <div class="empcard">
+            <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_640.jpg" alt="" height="450px" width="450px">
+            <h1>Abhishek</h1>
+            <h2>SDE 2</h2>
+            <p>React native expert,ui designer</p>
+        </div>
+        <div class="empcard">
+            <img src="https://cdn.pixabay.com/photo/2018/08/15/09/52/programmer-3607627_640.png" alt=" " height="450px" width="450px">
+            <h1>Vidhya</h1>
+            <h2>SDE 1</h2>
+            <p> NODE JS expert </p>
+        </div>
+
+    </section>
+
+    <article class="about-us">
+        <section class="content">
+            <h1>Healthcare Business <br>Insights
+            </h1>
+            <p>The healthcare industry is changing. Hospitals and health systems that once thrived are now struggling to control costs, increase revenues, train and retain employees and attract patients.
+
+                Healthcare Business InsightsTM provides a purpose-driven suite of solutions to address the market problems through advanced tools, valuable information and data that will solve their problems, transform their organizations and ultimately change lives.</p>
+            <ul>
+                <li><b>Optimize performance:</b> Identify what’s going wrong in your revenue cycle and fix it––basically we show you where the risks are in your people, process, and technology through an agile set of solutions.</li>
+                <li><b>Engage and retain employees:</b> Uncover knowledge gaps in your team and mend the divide––we have the secret sauce to take your team from good to great.</li>
+                <li><b>Understand the market:</b> Pair your expertise with best practices and expert insights to boost your success––reach into our bag of tricks so you don’t have to reinvent the wheel.</li>
+                
+            </ul>
+
+            <button class="sbn">Explore our Solution</button>
+        </section>
+
+        <section class="media">
+            <img src="./assetes/CL_photo_LH_people_092-e1628543221324-420x534.webp" alt="" height="400px" width="600px">
+            <p style=" color: grey;">We work with hospital and health system leaders to develop best practices to help you address your key business questions around the following areas:</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7201382291846!2d77.731237!3d12.9897434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11ee2df54b6f%3A0xb14b991589d9ede7!2sClarivate%20analytics!5e0!3m2!1sen!2sin!4v1697468547068!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+        </section>
+    </article>
+
+    <audio src="" controls muted></audio>
+    <video src="" controls type="mp4"></video>
+    
+</body>
+</html>

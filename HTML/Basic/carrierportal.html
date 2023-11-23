@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRIER PORTAL | REGISTER</title>
+</head>
+<body>
+    <form  method="post"  action="./login.html" autofocus="on" autocomplete="on">
+
+        <fieldset>
+        <!-- *all form elements are inline-->
+
+        <legend>Register as Carrier portal</legend>
+        <label for="username">NAME</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="mail">Email ID</label>
+        <input type="email" id="mail" name="mail" required><br><br>
+
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" value="Clarivate"><br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="gender" name="gender" value="Male">Male
+        <input type="radio" id="gender" name="gender" value="Female">Female
+        <input type="radio" id="gender" name="gender" value="Other">Other<br><br>
+        
+
+        <label for="contact">Contact Details</label>
+        <input type="tel" id="contact" name="contact" maxlength="10" minlength="10"><br><br>
+
+        <label for="exp">Experience</label>
+        <input type="range" id="exp" name="exp"><br><br>
+
+        <label for="skills">Skills</label>
+        <input type="checkbox" id="skills" name="skills" value="Java">Java
+        <input type="checkbox" id="skills" name="skills" value="Python">Python
+        <input type="checkbox" id="skills" name="skills" value="Dsa">DSA
+        <input type="checkbox" id="skills" name="skills" value="db">DataBase
+        <input type="checkbox" id="skills" name="skills" value="React">React<br><br>
+
+        <label for="qualification">Qualification</label>
+        <select name="qualification" id="qualification">
+
+        <optgroup label="ug-grads">
+            <option value="BTECH">BTECH</option>
+            <option value="BE">BE</option>
+            <option value="BSC">BSC</option>
+            <option value="BCA">BCA</option>
+        </optgroup>
+
+        <optgroup label="pg-grads">
+            <option value="MTECH">MTECH</option>
+            <option value="MSC">MSC</option>
+            <option value="MCA">MCA</option>
+        </optgroup>
+        </select><br><br>
+
+
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <label for="rd">Reporting Date</label>
+        <input type="datetime-local" id="rd" name="rd"><br><br>
+
+        <label for="cp">Create Password</label>
+        <input type="password" id="cp" name="cp"><br><br>
+
+        <label for="cp">Re-Create Password</label>
+        <input type="password" id="cp" name="cp"><br><br>
+
+        <label for="about">Summary</label>
+        <textarea name="about" id="about" cols="2" rows="2"></textarea><br><br>
+
+        <input type="submit">
+        <input type="reset">
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
